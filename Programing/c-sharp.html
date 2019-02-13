@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ibrahim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="c-sharp.css" />
+    <link rel="icon" href="favicon (1).ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Sacramento" rel="stylesheet">
+</head>
+    <body>
+    <div>
+        <h1><u>Top 50 C# Interviews Questions</u></h1>
+        <h3>Q #1 What is an Object and What is a Class?</h3>
+        <p>
+                <strong>A Calss</strong> is an encapsulation 
+                of properties and methods that are used to represent a real-time entity.
+                 It is a data structure that brings all the instances together in a single unit.
+                 <br/><br/>
+                <strong>An Object</strong> is an instance of a Class.
+                 Technically, it is just a block of memory allocated that can be stored in the form of Variables, Array or a Collection. 
+        </p>
+        <h3>Q #2 what are the fundamental OOP concepts</h3>
+        <ul>
+            <h4><strong>There are 4 fundamental concepts</strong></h4>
+            <li>
+                    <span>Encapsulation</span> – The Internal representation of an object is hidden from the view outside object’s definition. Only the required information can be accessed whereas the rest of the data implementation is hidden.
+            </li>
+            <li>
+                    <span>Abstraction</span> – It is a process of identifying the critical behavior and data of an object and eliminating the irrelevant details.
+            </li>
+            <li>
+                    <span>Inheritance</span> – It is the ability to create new classes from another class. It is done by accessing, modifying and extending the behavior of objects in the parent class.
+            </li>
+            <li>
+                    <span>Polimorphism</span> – The name means, one name, many forms. It is achieved by having multiple methods with the same name but different implementations.
+            </li>
+        </ul>
+        <h3>Q #3 What is Managed and Unmanaged Code?</h3>
+        <p>
+                <strong>Managed code</strong> is a code which is executed by CLR (Common Language Runtime) i.e all application code based on .Net Platform. 
+                It is considered as managed because of the .Net framework which internally uses the garbage
+                collector to clear up the unused memory.<br><br>
+
+                <strong>Unmanaged code</strong> is any code that is executed by application runtime of any other framework apart from .Net. The application runtime will take care of memory, security and other performance operations.
+        </p>
+        <h3>Q #4 What is Interface?</h3>
+        <p><strong>An Interface</strong> is a class with no implementation. The only thing that it contains is the declaration of methods, properties, and events</p>
+        <h3>Q #5 What are the different Types of Classes in C#?</h3>
+        <ul>
+            <li><span>Partial Class</span> – Allows its members to be divided or shared with multiple .cs files. It is denoted by the keyword Partial.</li>
+            <li><span>Sealed Class</span> – It is a class which cannot be inherited. To access the members of a sealed class, we need to create the object of the class.  It is denoted by the keyword Sealed.</li>
+            <li><span>Abstract Class</span> - It is a class whose object cannot be instantiated. The class can only be inherited. It should contain at least one method.  It is denoted by the keyword abstract.</li>
+            <li><span>Satic Class</span> – It is a class which does not allow inheritance. The members of the class are also static.  It is denoted by the keyword static. This keyword tells the compiler to check for any accidental instances of the static class.</li>
+        </ul>
+        <h3>Q #6 Explain Code compilation in C#</h3>
+        <ul>
+            <li>Compiling the source code into Managed code by C# compiler.</li>
+            <li>Combining the newly created code into assemblies.</li>
+            <li>Loading the Common Language Runtime(CLR).</li>
+            <li>Executing the assembly by CLR.</li>
+        </ul>
+        <h3>Q #7 Whar are the differences between a Class and a Struct?</h3>
+        <table>
+            <thead>
+                <tr class="trheader">
+                    <th class="column-1">Class</th>
+                    <th class="column-2">Struct</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="trbody">
+                    <td class="column-1">Supports Inheritance</td>
+                    <td class="column-2">Does not support Inheritance</td>
+                </tr>
+                <tr class="trbody">
+                    <td class="column-1" >Class is Pass by reference (reference type)</td>
+                    <td class="column-2">Struct is Pass by Copy (Value type)</td>
+                </tr>
+                <tr class="trbody">
+                    <td class="column-1" >Members are private by default</td>
+                    <td class="column-2">Members are public by default</td>
+                </tr>
+                <tr class="trbody">
+                    <td class="column-1">Good for larger complex objects</td>
+                    <td class="column-2">Good for Small isolated models</td>
+                </tr>
+                <tr class="trbody">
+                    <td class="column-1">Can use waste collector for memory management</td>
+                    <td class="column-2">Cannot use Garbage collector and hence no Memory management</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Q #8 What is the difference between Virtual Method and Abstract Method?</h3>
+        <p><strong>A Virtual Method</strong>   must always have a default implementation. However, it can be overridden in the derived class, though not mandatory. It can be overridden using override keyword.<br><br>
+            <strong>An Abstract Method</strong>  does not have an implementation. 
+            It resides in the abstract class.
+             It is mandatory that the derived class implements the 
+             ract method. An override keyword is not necessary here 
+             ugh it can be used.
+        </p>
+        <h3>Q #9 Explain Namespaces in in C#</h3>
+        <p>
+                They are used to organize large code projects.
+                 “System” is the most widely used namespace in C#.
+                  We can create our own namespace and use one namespace in another, 
+                  which are called Nested Namespaces.
+
+                They are denoted by the keyword “namespace”. 
+        </p>
+        <h3>Q #10 What is using statement in C#?</h3>
+        <p>“Using” Keyword denotes that the particular namespace is being used by the program.</p>
+        <h3>Q #11 Explain Abstraction</h3>
+        <p> is one of the OOP concepts. It is used to display only the essential features of the class and hides the unnecessary information.
+            <br><br>
+            So, Abstraction helps in knowing what is necessary and hiding 
+            the internal details from the outside world. Hiding of the 
+            internal information can be achieved by 
+            declaring such parameters as Private using the private keyword.
+        </p>
+        <h3>Q #12 Explain Polymorphism</h3>
+        <p><strong>Polymorphism</strong> means same method but different implementations.
+
+           <br><br> It is of 2 types, Compile-time and Runtime.
+           <br>
+           <strong>Compile time Polymorphism</strong> is achieved by operator overloading.
+           <br>
+           <strong>Runtime Polymorphism</strong> is achieved by overriding. Inheritance and Virtual functions are used during Runtime Polymorphism.
+         </p>
+         <h3>Q #13 How Exception Handling is done in C#?</h3>
+         <ul>
+             <li><span>try</span> - Contains a block of code for which an exception will be checked.</li>
+             <li><span>cath</span> - It is a program that catches an exception with the help of exception handler.</li>
+             <li><span>finally</span> - It is a block of code written to execute regardless whether an exception is caught or not. </li>
+             <li><span>throw</span> - Throws an exception when a problem occurs.</li>
+         </ul>
+         <h5>You can't use multiple cath block for the same type of exception in C#.</h5>
+         <h3>Q #14 What are C# I/O classes? and the common used</h3>
+         <p>C# has System.IO namespace, consisting of classes that are used to perform various operations on files like creating, deleting, opening, closing etc.</p>
+         <ul>
+             <li><span>File</span>– Helps in manipulating a file.</li>
+             <li><span>StreamWriter</span> – Used for writing characters to a stream.</li>
+             <li><span>StreamReader</span> – Used for reading characters to a stream.</li>
+             <li><span>StringWriter</span> – Used for reading a string buffer.</li>
+             <li><span>StringReader</span> – Used for writing a string buffer.</li>
+             <li><span>Path</span> – Used for performing operations related to path information. </li>
+         </ul>
+         <h3>Q #15 What is StreamReader/StreamWriter class?</h3>
+         <p>They are used when we want to write or read to/from a file</p>
+         <h3>Q #16 What is a Destructor in C#</h3>
+         <p><strong>A Destructor</strong> is used to clean up the memory and free the resources. But in C# this is done by the garbage collector on its own. System.GC.Collect() is called internally for cleaning up. But sometimes it may be necessary to implement destructors manually.</p>
+         <h3>Q 317 What is an Abstract Class?</h3>
+         <p>It is a class which is denoted by abstract keyword and can be used only as a Base class. 
+            An Abstract class should always be inherited. An instance of the class itself cannot be created.
+            If we do not want any program to create an object of a class,
+            then such classes can be made abstract.<br> <br>
+            is a class which is denoted by abstract keyword and can be used only as a Base class. An Abstract class should always be inherited. An instance of the class itself cannot be created. If we do not want any program to create an object of a class, then such classes can be made abstract.
+        </p>
+        <h3>Q #17 What is an Abstract Class?</h3>
+        <p><strong>An Abstract Class</strong> is a class which is denoted by abstract keyword and can be used only as a Base class. An Abstract class should always be inherited. An instance of the class itself cannot be created. If we do not want any program to create an object of a class, then such classes can be made abstract.
+        </p>
+    </div>
+    </body>
+    <footer></footer>
+</html>
