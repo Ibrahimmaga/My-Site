@@ -70,19 +70,13 @@ h4 {
 }
 
 /*============== footer======================
-.bottom-container{
-    
 
-}*/
-.tbfooter {
-    
-    height: 50px;
-    border-spacing: 10px;
-    table-layout: auto;
-    padding: 0 500px 0 500px;
-    
+* footer section */
+#footer {
+    padding: 5px;
+    text-align: center;
 }
-.footericons{
-    width: 25px;
-    height: 25px;
+.social-icon {
+    margin: 20px 15px;
+    color: black;
 }
